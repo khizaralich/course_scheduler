@@ -1,8 +1,10 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 20px;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -17,14 +19,24 @@
 }
 
 .App-header {
-  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .App-header h1 {
   color: white;
-  margin: 0;
+  margin: 0 0 5px 0;
   font-size: 2.5rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.App-header p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-size: 1rem;
 }
 
 .App-link {
@@ -41,7 +53,9 @@
 }
 
 main {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding: 20px;
 }
